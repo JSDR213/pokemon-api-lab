@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <form>
+            <input type="text"  value="" placeholder="Choose your pokemon!"  id="inputBar">
+            <input type="button"  value="Click here" id="searchButton">
+        </form>
+    </header>
+
+    <section class="title">
+        <h1 id="pokemonName"></h1>
+        <div id="pokemonImage"></div>
+        <img id="homeImage"/>
+    </section>
+    
+    <section class="info">
+        <div class="basic">
+            <p id="id"></p>
+            <p id="name"></p>
+            <p id="order"></p>
+            <p id="height"></p>
+            <p id="weight"></p>
+            <p id="base_experience"></p>
+        </div>
+
+        <div class="move"></div>
+        <div class="ability"></div>
+    </section>
+</body>
+</html>

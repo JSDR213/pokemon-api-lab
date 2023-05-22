@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+body {
+    width: 900px;
+    margin: auto;
+    font-family: 'Kiwi Maru', serif;
+
+}
+
+form {
+    padding: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+input {
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#inputBar {
+    width: 200px;
+    padding-left: 10px;
+    border: 2px solid tomato;
+}
+
+#searchButton {
+    background-color: tomato;
+    color: white;
+}
+
+span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pokemonName {
+    text-align: center;
+    color: tomato;
+}
+
+#pokemonImage {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#homeImage {
+    display: inline-block;
+    text-align: center;
+    width:30vmin
+}
+
+img {
+    display: inline_block;
+    margin: 0 auto;
+}
+
+.info {
+    width: 70vmin;
+    margin: 8vmin auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.info > div {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    line-height: 1.8em;
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
+}

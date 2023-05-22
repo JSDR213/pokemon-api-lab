@@ -1,3 +1,5 @@
+## SEIR 0508
+
 ### PokeAPI lab
 
 
@@ -6,11 +8,13 @@ Lets first create an html file, attach in our JS Script file and the Axios libra
 We can put in some empty HTML elements as well to populate with our response data, in this case just an H2 and an Image, but we can put in as much as we want once we get our calls made. Scaffold in a CSS file to add some style once the data is rendered on screen too!
 
 
+Explore the https://pokeapi.co/ API with ThunderClient to see what types of endpoints are available, and what your data will look like
+
 You may need to Map through and run some conditionals for some peices of information (abilities, types...) if you want to put in additional peices of API data 
 
 ```html
 <form>
-    <input type="text"  value="" placeholder="Enter text here"  id="inputBar">
+    <input type="text"  value="" placeholder="Choose your pokemon!"  id="inputBar">
     <input type="button"  value="Click here" id="searchButton">
 </form>
 
@@ -29,16 +33,22 @@ let button = document.querySelector("#searchButton")
 
 button.addEventListener('click', async () => {
 
-    let textInput = document.querySelector("#inputBar").value
     let pokemonName = document.querySelector("#pokemonName")
     let pokemonImage = document.querySelector("#pokemonImage")
-
+    //where does this need to be scoped?
+    let textInput = document.querySelector("#inputBar").value
+        
 
     //Axios call goes here
-    //remember to use Await!
+    //remember to use Async and Await!
     //DOM Setters go here
 
 }
-
+)
 
 ```
+
+Once you have the initial data rendered, try to add as much as possible. We can search Pokemon by names and numbers, can we also search for Moves, Berries, and other information?
+
+
+Finally, this is a chance to really explore your styling skills. Be sure to create some wireframes to work with before creating something you can really show off, and have fun with!
