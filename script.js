@@ -26,6 +26,11 @@ inputButton.addEventListener('click', async () => {
         const pokeName = await axios.get(`https://pokeapi.co/api/v2/pokemon/${textInput}`)
       //  let placeholderImage = pokeName.data.sprites.front_default
         console.log(pokeName.data)
+      //  setting visibilities
+        document.querySelector("#sex1").style.visibility = 'visible'
+        document.querySelector("#sex2").style.visibility = 'visible'
+        document.querySelector("#male-images").style.visibility = 'visible'
+        document.querySelector("#female-images").style.visibility = 'visible'
         //name
         pName.innerHTML = `Name: ${pokeName.data.name}`
         //type
@@ -65,6 +70,13 @@ inputButton.addEventListener('click', async () => {
         fStdBck.innerHTML = `<img src=${pokeName.data.sprites.back_female}>`
         fShnyFrt.innerHTML = `<img src=${pokeName.data.sprites.front_shiny_female}>`
         fShnyBck.innerHTML = `<img src=${pokeName.data.sprites.back_shiny_female}>`
+        //image tester
+        if (fStdFrt.innerHTML == `<img src="null">`) {
+            document.querySelector(`#female-images`).style.visibility = 'hidden'
+            document.querySelector("#sex2").style.visibility = 'hidden'
+            document.querySelector("#sex1").innerText = "Sprites"
+        }
+        document.querySelector("#sex1").innerText = "Male Sprites"
         //background color
         let firstType = pokeName.data.types[0].type.name
         document.body.style.color = "black";
