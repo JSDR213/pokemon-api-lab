@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex 2</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Pokedex 2</h1>
+        <h4 id="description">Search for any pokemon in the box below to find out more about them!</h4>
+        <form id="seachBar">
+            <input type="text"  value="" placeholder="Choose your pokemon!"  id="inputBar">
+            <input type="button"  value="Generate" id="searchButton">
+        </form>
+        <div id="logo"></div>
+    </header>
+
+    <div id="main">
+        <div id="allstats">
+            <div id="pokeName"></div>
+            <div id="types"></div>
+            <div id="height-weight"></div>
+            
+            <div id="stats"></div>
+            <div id="sprites"></div>
+        </div>
+            <div class="image-box" id="male-images">
+                <div class="poke-image sex" id="sex1">Male Sprites</div>
+                <div class="poke-image" id="standard-front"></div>
+                <div class="poke-image" id="standard-back"></div>
+                <div class="poke-image" id="shiny-front"></div>
+                <div class="poke-image" id="shiny-back"></div>
+            </div>
+            <div class="image-box" id="female-images">
+                <div class="poke-image sex" id="sex2">Female Sprites</div>
+                <div class="poke-image" id="standard-front"></div>
+                <div class="poke-image" id="standard-back"></div>
+                <div class="poke-image" id="shiny-front"></div>
+                <div class="poke-image" id="shiny-back"></div>
+            </div>
+        </div>
+        <div id="abilities"></div>
+    </div>
+    <!-- <h2 id="pokemonName"> </h2>
+    <img id="pokemonImage"/> -->
+</body>
+</html>
